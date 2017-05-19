@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<title>SONGHAN</title>
+<style type="text/css">
+.1 {
+}
+#cs{
+	color: #666666;
+	font-size: 36px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#sh{color:#F8F8F8; font-size:14px
+}
+</style>
+</head>
+<body>
+<div class="navigation"> 
+  <a href="index.html" class="btn"> 首页</a>
+  <a href="about me.html" class="btn"> 自我介绍</a>
+  <a href="weeks.html" class="btn"> 每周工作 </a>
+  <a href="final project.html" class="btn"> 最终成果 </a>
+  <a href="more.html" class="btn"> 更多信息 </a>
+  </ul>
+</div>
+
+<img src="img/13.jpg" width="1021" height="225">
+<table width="1021" height="119" border="1">
+  <tbody>
+    <tr>
+      <th width="1011" height="113" align="center" valign="middle"  id="cs" scope="col" >WEEK 2</th>
+    </tr>
+  </tbody>
+</table>
+<table width="1021" height="582" border="1">
+  <tbody>
+    <tr>
+      <th width="1011" height="576" align="left" valign="top"  id="neirong" scope="col" ><ol start="1">
+        <li>#define NTC0 -1  </li>
+        <li>#define NTC1 262  </li>
+        <li>#define NTC2 294  </li>
+        <li>#define NTC3 330  </li>
+        <li>#define NTC4 350  </li>
+        <li>#define NTC5 393  </li>
+        <li>#define NTC6 441  </li>
+        <li>#define NTC7 495  </li>
+        <li>  </li>
+        <li>#define NTCL1 131  </li>
+        <li>#define NTCL2 147  </li>
+        <li>#define NTCL3 165  </li>
+        <li>#define NTCL4 175  </li>
+        <li>#define NTCL5 196  </li>
+        <li>#define NTCL6 221  </li>
+        <li>#define NTCL7 248     </li>
+        <li>  </li>
+        <li>#define NTCH1 525  </li>
+        <li>#define NTCH2 589  </li>
+        <li>#define NTCH3 661  </li>
+        <li>#define NTCH4 700  </li>
+        <li>#define NTCH5 786  </li>
+        <li>#define NTCH6 882  </li>
+        <li>#define NTCH7 990  </li>
+        <li>//列出全部C调的频率  </li>
+        <li>#define WHOLE 1  </li>
+        <li>#define HALF 0.5  </li>
+        <li>#define QUARTER 0.25  </li>
+        <li>#define EIGHTH 0.25  </li>
+        <li>#define SIXTEENTH 0.625  </li>
+        <li>//列出所有节拍  </li>
+        <li>int tune[]=                 //根据简谱列出各频率  </li>
+        <li>{  </li>
+        <li>  NTC5,NTC5,NTC6,  </li>
+        <li>  NTCH1,NTC6,NTC5,NTC6,NTCH1,NTC6,NTC5,  </li>
+        <li>  NTC3,NTC3,NTC3,NTC5,  </li>
+        <li>  NTC6,NTC6,NTC5,NTCH3,NTCH3,NTCH2,NTCH1,  </li>
+        <li>  NTCH2,NTCH1,NTCH2,  </li>
+        <li>  NTCH3,NTCH3,NTCH2,NTCH3,NTCH2,NTCH1,NTCH2,NTCH1,NTC6,  </li>
+        <li>  </li>
+        <li>  NTCH2,NTCH2,NTCH2,NTCH1,NTC6,NTC5,  </li>
+        <li>  NTC6,NTC5,NTC5,NTCH1,NTC6,NTC5,NTC1,NTC3,  </li>
+        <li>  NTC2,NTC1,NTC2,  </li>
+        <li>  NTC3,NTC5,NTC5,NTC3,NTCH1,NTC7,  </li>
+        <li>  NTC6,NTC5,NTC6,NTCH1,NTCH2,NTCH3,  </li>
+        <li>  </li>
+        <li>  NTCH3,NTCH2,NTCH1,NTC5,NTCH1,NTCH2,NTCH3,  </li>
+        <li>  </li>
+        <li>  NTCH2,NTC0,NTCH3,NTCH2,  </li>
+        <li>  NTCH1,NTC0,NTCH2,NTCH1,NTC6,NTC0,  </li>
+        <li>  </li>
+        <li>  NTCH2,NTC6,NTCH1,NTCH1,NTCH1,NTC6,NTC5,NTC3,  </li>
+        <li>  NTC5,  </li>
+        <li>  NTC5,NTC6,NTCH1,NTC7,NTC6,  </li>
+        <li>  NTCH3,NTCH3,NTCH3,NTCH3,NTCH2,NTCH2,NTCH1,  </li>
+        <li>  NTC6,NTCH3,NTCH2,NTCH1,NTCH2,NTCH1,NTC6,  </li>
+        <li>  NTCH1,  </li>
+        <li>};  </li>
+        <li>float durt[]=                   //根据简谱列出各节拍  </li>
+        <li>{  </li>
+        <li>0.5,0.25,0.25,  </li>
+        <li>1.5,0.5,0.5,0.25,0.25,0.5,0.5,  </li>
+        <li>1+1+1,0.5,0.25,0.25,  </li>
+        <li>1.5,0.5,0.5,0.5,0.25,0.25,0.5,  </li>
+        <li>1+1+1,0.5,0.5,  </li>
+        <li>0.5,0.5,0.5,0.25,0.25,0.5,0.25,0.25,0.5,  </li>
+        <li>0.5,0.5,0.5,0.25,0.25,1+1,  </li>
+        <li>0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,  </li>
+        <li>1+1+1,0.5,0.5,  </li>
+        <li>  </li>
+        <li>  </li>
+        <li>1.5,0.5,0.5,0.5,0.5,0.5,  </li>
+        <li>1.5,0.5,1,0.5,0.25,0.25,  </li>
+        <li>1.5,0.5,0.5,0.5,0.5,0.25,0.25,  </li>
+        <li>1+1+1,0.5,0.25,0.25,  </li>
+        <li>1,0.5,0.25,0.25,1,1,  </li>
+        <li>0.5,0.5,0.5,0.5,1,0.25,0.25,0.5,  </li>
+        <li>1+1+1+1,  </li>
+        <li>0.5,0.5,0.5,0.5,1+1,  </li>
+        <li>0.5,0.5,0.5,0.5,1.5,0.25,0.25,  </li>
+        <li>1.5,0.5,1,0.25,0.25,0.25,0.25,1+1+1+1,  </li>
+        <li>  </li>
+        <li>};  </li>
+        <li>int length;  </li>
+        <li>int tonepin=6;   //得用6号接口  </li>
+        <li>void setup()  </li>
+        <li>{  </li>
+        <li>  pinMode(tonepin,OUTPUT);  </li>
+        <li>  length=sizeof(tune)/sizeof(tune[0]);   //计算长度  </li>
+        <li>}  </li>
+        <li>void loop()  </li>
+        <li>{  </li>
+        <li>  for(int x=0;x&lt;length;x++)  </li>
+        <li>  {  </li>
+        <li>    tone(tonepin,tune[x]);  </li>
+        <li>    delay(500*durt[x]);   //这里用来根据节拍调节延时</li>
+        <li>    noTone(tonepin);  </li>
+        <li>  }  </li>
+        <li>  delay(2000);  </li>
+        <li>}  </li>
+      </ol></th>
+    </tr>
+  </tbody>
+</table>
+<table width="1021" height="143" border="1">
+  <tbody>
+    <tr>
+      <th width="1005" height="137" bgcolor="#F1680A" id="sh" scope="col"><p></p>
+     
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
+
